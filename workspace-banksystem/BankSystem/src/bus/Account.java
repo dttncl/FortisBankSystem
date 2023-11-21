@@ -1,11 +1,11 @@
 package bus;
 
 public class Account {
-	private String accountNumber;
-	private EnumAccount type;
-	private Date openedDate;
-	private double availBalance;
-	private double totalBalance;
+	protected String accountNumber;
+	protected EnumAccount type;
+	protected Date openedDate;
+	protected double availBalance;
+	protected double totalBalance;
 	
 	public Account() {
 		super();
