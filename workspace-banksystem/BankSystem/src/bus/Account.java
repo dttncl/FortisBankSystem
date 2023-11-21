@@ -9,6 +9,11 @@ public class Account {
 	
 	public Account() {
 		super();
+		this.accountNumber = "000-000-000";
+		this.type = EnumAccount.Undefined;
+		this.openedDate = new Date();
+		this.availBalance = 0;
+		this.totalBalance = 0;
 	}
 	
 	public Account(String accountNumber, EnumAccount type, Date openedDate, double availBalance, double totalBalance) {

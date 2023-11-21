@@ -4,10 +4,10 @@ public class SavingsAccount extends Account {
 	private double interestRate;
 	private double annualGain;
 	
-	public SavingsAccount(double interestRate, double annualGain) {
+	public SavingsAccount() {
 		super();
-		this.interestRate = interestRate;
-		this.annualGain = annualGain;
+		this.interestRate = 0;
+		this.annualGain = 0;
 	}
 
 	public SavingsAccount(String accountNumber, EnumAccount type, Date openedDate, double availBalance,
