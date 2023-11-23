@@ -7,6 +7,9 @@ public class Date {
 		
 	public Date() {
 		super();
+		this.month = 1;
+		this.day = 1;
+		this.year = 2000;
 	}
 
 	public Date(int month, int day, int year) {

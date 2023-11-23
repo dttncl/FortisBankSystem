@@ -1,14 +1,19 @@
 package bus;
 
 public class Account {
-	private String accountNumber;
-	private EnumAccount type;
-	private Date openedDate;
-	private double availBalance;
-	private double totalBalance;
+	protected String accountNumber;
+	protected EnumAccount type;
+	protected Date openedDate;
+	protected double availBalance;
+	protected double totalBalance;
 	
 	public Account() {
 		super();
+		this.accountNumber = "000-000-000";
+		this.type = EnumAccount.Undefined;
+		this.openedDate = new Date();
+		this.availBalance = 0;
+		this.totalBalance = 0;
 	}
 	
 	public Account(String accountNumber, EnumAccount type, Date openedDate, double availBalance, double totalBalance) {
