@@ -41,11 +41,13 @@ public class CheckingAccount extends Account {
 	public void setTransactionFee(int transactionFee) {
 		this.transactionFee = transactionFee;
 	}
-	
+
 	@Override
 	public String toString() {
-		return super.toString() + "CheckingAccount [freeTransactions="+freeTransactions+", nbTramsactions="+nbTransactions+
-				", transactionFee="+transactionFee+"]";
+		return "CheckingAccount [freeTransactions=" + freeTransactions + ", nbTransactions=" + nbTransactions
+				+ ", transactionFee=" + transactionFee + ", toString()=" + super.toString() + "]";
 	}
+	
+
 
 }

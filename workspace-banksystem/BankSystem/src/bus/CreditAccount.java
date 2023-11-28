@@ -20,10 +20,12 @@ public class CreditAccount extends LineOfCreditAccount {
 	public void setTransactionFee(Double transactionFee) {
 		this.transactionFee = transactionFee;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "CreditAccount [freeTransactions="+transactionFee+"]";
+		return "CreditAccount [transactionFee=" + transactionFee + ", toString()=" + super.toString() + "]";
 	}
+	
+
 
 }

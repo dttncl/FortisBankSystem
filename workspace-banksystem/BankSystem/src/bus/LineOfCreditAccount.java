@@ -30,9 +30,12 @@ public class LineOfCreditAccount extends Account {
 	public void setLateFee(Double lateFee) {
 		this.lateFee = lateFee;
 	}
-	
+
 	@Override
 	public String toString() {
-		return super.toString() + "LineOfCreditAccount [currentBalance="+currentBalance+", lateFee="+lateFee+"]";
+		return "LineOfCreditAccount [currentBalance=" + currentBalance + ", lateFee=" + lateFee + ", toString()="
+				+ super.toString() + "]";
 	}
+	
+
 }

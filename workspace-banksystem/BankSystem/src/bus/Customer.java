@@ -7,14 +7,17 @@ public class Customer extends User {
 	private ArrayList<Account> listOfAccounts;
 	private ArrayList<Transaction> listOfTransactions;
 	
+	
+	
 	public Customer() {
 		super();
-		this.listOfAccounts = null;
+		addCheckingAccount();
 		this.listOfTransactions = null;
 	}
 	
 	public Customer(ArrayList<Account> listOfAccounts, ArrayList<Transaction> listOfTransactions) {
 		super();
+		addCheckingAccount();
 		this.listOfAccounts = listOfAccounts;
 		this.listOfTransactions = listOfTransactions;
 	}
@@ -39,6 +42,10 @@ public class Customer extends User {
 	public String toString() {
 		return "Customer [listOfAccounts=" + listOfAccounts + ", listOfTransactions=" + listOfTransactions
 				+ ", toString()=" + super.toString() + "]";
+	}
+	
+	private void addCheckingAccount() {
+		this.listOfAccounts.add(new CheckingAccount());
 	}
 
 
