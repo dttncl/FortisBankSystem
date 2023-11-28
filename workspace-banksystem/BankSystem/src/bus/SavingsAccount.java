@@ -35,7 +35,11 @@ public class SavingsAccount extends Account {
 
 	@Override
 	public String toString() {
-		return "SavingsAccount [interestRate=" + interestRate + ", annualGain=" + annualGain + "]";
+		return "SavingsAccount [interestRate=" + interestRate + ", annualGain=" + annualGain + ", toString()="
+				+ super.toString() + "]";
 	}
+
+
+	
 	
 }
