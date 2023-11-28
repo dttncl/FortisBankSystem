@@ -4,20 +4,20 @@ import java.util.ArrayList;
 
 public class Customer extends User {
 	
+	// Hello from MARS
+	
 	private ArrayList<Account> listOfAccounts;
 	private ArrayList<Transaction> listOfTransactions;
 	
-	
-	
 	public Customer() {
 		super();
-		addCheckingAccount();
+		//addCheckingAccount();
 		this.listOfTransactions = null;
 	}
 	
 	public Customer(ArrayList<Account> listOfAccounts, ArrayList<Transaction> listOfTransactions) {
 		super();
-		addCheckingAccount();
+		//addCheckingAccount();
 		this.listOfAccounts = listOfAccounts;
 		this.listOfTransactions = listOfTransactions;
 	}
