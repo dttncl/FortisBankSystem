@@ -14,6 +14,7 @@ public class BankTestV1 {
 		
 		BankManager Atwater = new BankManager();
 		Customer Sharon = new Customer();
+		Customer Bonnie = new Customer();
 		
 		
 		System.out.println("Welcome to Fortis Bank");
